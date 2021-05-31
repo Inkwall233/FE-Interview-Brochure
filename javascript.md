@@ -330,7 +330,7 @@ Array.prototype._reduce = (callback, initialValue) => {
 
 ```javascript
 //Ajax原生简单实现
-let xhr = XMLHttpRequest;
+let xhr = new XMLHttpRequest();
 xhr.onreadystatechange = () => {
     if(xhr.readyState === 4){
         if(xhr.status === 200){
